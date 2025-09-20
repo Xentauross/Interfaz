@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario con Popup</title>
+<style>
+    body {
+        font-family: Comic Sans MS, sans-serif;
+        background: linear-gradient(45deg, yellow, cyan, magenta);
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: background 0.5s;
+    }
+    .container {
+        background-color: white;
+        border: 5px dotted red;
+        padding: 20px;
+        max-width: 500px;
+        text-align: center;
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+    }
+    h2 {
+        color: #007bff;
+    }
+    input {
+        padding: 8px;
+        border: 2px dashed orange;
+        margin: 5px 0;
+        width: 90%;
+    }
+    .form-buttons {
+        margin-top: 15px;
+    }
+    button {
+        padding: 10px 15px;
+        border: 3px solid purple;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 5px;
+        font-weight: bold;
+        background: #007bff;
+        color: white;
+    }
+    /* --- POPUP --- */
+    .popup {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+    .popup-content {
+        background: white;
+        padding: 20px;
+        width: 400px;
+        border: 5px solid red;
+        text-align: left;
+    }
+    .popup-scroll {
+        height: 200px;
+        overflow-y: hidden;
+        border: 2px solid black;
+        margin: 10px 0;
+        padding: 10px;
+        position: relative;
+    }
+    .aceptar-palabra {
+        font-weight: bold;
+        color: blue;
+        opacity: 0.3;
+        pointer-events: none;
+        cursor: pointer;
+    }
+    .aceptar-palabra.activa {
+        opacity: 1;
+        pointer-events: auto;
+    }
+</style>
+</head>
+<body>
+
+<!-- POPUP -->
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <h2>Debes leer esto completo</h2>
+        <p>Desplázate lentamente hasta el final para desbloquear la palabra.</p>
+        <div class="popup-scroll" id="popup-scroll">
+            <div id="popup-texto"></div>
+        </div>
+        <button id="popup-cancelar">Cancelar</button>
+    </div>
+</div>
+
+<!-- FORMULARIO -->
+<div class="container">
+    <h2>Formulario</h2>
+    <form id="fusion-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="edad">Edad:</label>
+        <input type="text" id="edad" required>
+
+        <div class="form-buttons">
+            <button type="button" id="form-aceptar">Aceptar</button>
+            <button type="button" id="form-cancelar">Cancelar</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    // Generar gradiente aleatorio
+    function gradienteAleatorio() {
+        const colores = ["red", "blue", "green", "purple", "orange", "pink", "cyan", "yellow", "magenta", "lime"];
+        const c1 = colores[Math.floor(Math.random() * colores.length)];
+        const c2 = colores[Math.floor(Math.random() * colores.length)];
+        const angulo = Math.floor(Math.random() * 360);
+        document.body.style.background = `linear-gradient(${angulo}deg, ${c1}, ${c2})`;
+    }
+
+    // --- VALIDACIONES FORMULARIO ---
+    const fusionForm = document.getElementById('fusion-form');
+    const nombreInput = document.getElementById('nombre');
+    const edadInput = document.getElementById('edad');
+
+    nombreInput.addEventListener('input', (e) => {
+        let valor = e.target.value;
+        let ultimo = valor.slice(-1);
+        if (/[a-zA-Z]/.test(ultimo)) {
+            gradienteAleatorio();
+            if (!confirm(`¿Estás seguro de usar la letra "${ultimo}"? 🤔`)) {
+                e.target.value = valor.slice(0, -1);
+            }
+        } else {
+            e.target.value = valor.replace(/[^a-zA-Z]/g, '');
+        }
+    });
+
+    edadInput.addEventListener('input', (e) => {
+        let valor = e.target.value;
+        let ultimo = valor.slice(-1);
+        if (/[0-9]/.test(ultimo)) {
+            gradienteAleatorio();
+            if (!confirm(`¿Seguro que quieres usar el número "${ultimo}"? 😏`)) {
+                e.target.value = valor.slice(0, -1);
+            }
+        } else {
+            e.target.value = valor.replace(/[^0-9]/g, '');
+        }
+    });
+
+    document.getElementById('form-aceptar').addEventListener('click', () => {
+        if (confirm("¿Seguro que quieres aceptar...? No estoy muy convencido 😏")) {
+            alert("Formulario enviado (¿o no?)");
+            fusionForm.reset();
+        }
+    });
+
+    document.getElementById('form-cancelar').addEventListener('click', () => {
+        if (confirm("¿De verdad quieres cancelar...? Puede que no sea buena idea 🤨")) {
+            fusionForm.reset();
+            alert("Formulario cancelado... tal vez.");
+        }
+    });
+
+    // --- POPUP SCROLL LENTO ---
+    const popup = document.getElementById('popup');
+    const popupScroll = document.getElementById('popup-scroll');
+    const popupTexto = document.getElementById('popup-texto');
+    const popupCancelar = document.getElementById('popup-cancelar');
+
+    // Ahora "ACEPTAR" aparece en el texto
+    popupTexto.innerHTML = "Términos absurdos. ".repeat(100) + "<br><span id='aceptarPalabra' class='aceptar-palabra'>ACEPTAR</span>";
+
+    const aceptarPalabra = document.getElementById('aceptarPalabra');
+
+    let scrollPos = 0;
+    function scrollLento() {
+        scrollPos += 0.12;
+        if (scrollPos > popupScroll.scrollHeight - popupScroll.clientHeight) {
+            scrollPos = popupScroll.scrollHeight - popupScroll.clientHeight;
+        }
+        popupScroll.scrollTop = scrollPos;
+        requestAnimationFrame(scrollLento);
+    }
+    scrollLento();
+
+    function checkScroll() {
+        const bottom = popupScroll.scrollTop + popupScroll.clientHeight >= popupScroll.scrollHeight - 1;
+        if (bottom) {
+            aceptarPalabra.classList.add('activa');
+        }
+    }
+    popupScroll.addEventListener('scroll', checkScroll);
+
+    aceptarPalabra.addEventListener('click', () => {
+        if (aceptarPalabra.classList.contains('activa')) {
+            if (confirm("¿Seguro que quieres aceptar estos términos raros? 🤔")) {
+                popup.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+    });
+
+    popupCancelar.addEventListener('click', () => {
+        if (confirm("¿Seguro que quieres cancelar sin leerlo todo? 😳")) {
+            scrollPos = 0;
+            popupScroll.scrollTop = 0;
+            aceptarPalabra.classList.remove('activa');
+        }
+    });
+</script>
+</body>
+</html>
