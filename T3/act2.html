@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2</title>
+    <style>
+        :root {
+            --principal: #4a8de3;
+            --secundario: hsl(255, 15%, 67%);
+            --acento: rgb(255, 180, 90);
+        }
+
+        #perfil {
+            background-color: var(--secundario);
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .nombre {
+            color: var(--principal);
+            font-size: 1.5em;
+        }
+
+        p {
+            color: rgba(0, 0, 0, 0.8);
+        }
+
+        .boton:hover {
+            color: var(--acento);
+        }
+
+        .nombre::before {
+            content: ".";
+        }
+    </style>
+</head>
+
+<body>
+    <div id="perfil">
+        <h2 class="nombre">😊 Perfil</h2>
+        <p>Soy estudiante de desarrollo web.Me gusta aprender estilos CSS</p>
+        <button class="boton">Contactame
+    </div>
+</body>
+
+</html>
