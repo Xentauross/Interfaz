@@ -1,0 +1,6 @@
+/* Obligamos a que el header este arriba y el fotter debajo*/
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
