@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox 1</title>
+    <style>
+        .menu {
+            height: 30px;
+            width: auto;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            gap: 2px;
+        }
+
+        li {
+            list-style-type: none;
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-family: sans-serif;
+            background-color: rgba(123, 198, 199, 0.8);
+            display: block;
+            line-height: 30px;
+            padding-left: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Opciones</a></li>
+            <li><a href="#">Planes</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
