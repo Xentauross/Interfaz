@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            font: sans-serif;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+
+        section {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            width: 300px;
+            height: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            height: 30px;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 15px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+        p {
+            padding-top: 10px;
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-evenly;
+            line-height: 1.4;
+        }
+
+        h4 {
+            height: 30px;
+            background-color: #acacac;
+            color: #ffffff;
+            padding: 15px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="card1">
+            <h2>Tarjeta izquierda</h2>
+            <p>Contenido del cuerpo</p>
+            <p>Contenido del cuerpo</p>
+            <p>Contenido del cuerpo</p>
+            <h4>Pie</h4>
+        </section>
+        <section class="card2">
+            <h2>Tarjeta centro</h2>
+            <p>Contenido del cuerpo</p>
+            <h4>Pie</h4>
+        </section>
+        <section class="card3">
+            <h2>Tarjeta derecha</h2>
+            <p>Contenido del cuerpo</p>
+            <h4>Pie</h4>
+        </section>
+    </main>
+</body>
+
+</html>

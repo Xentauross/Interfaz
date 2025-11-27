@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+            height: 80vh;
+            gap: 2px;
+        }
+
+        aside,
+        main {
+            padding: 12px 24px;
+        }
+
+        aside {
+            background-color: rgb(138, 199, 255);
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+
+        main {
+            background-color: rgb(207, 255, 207);
+            flex-grow: 8;
+            flex-shrink: 0;
+        }
+
+        li {
+            list-style-type: none;
+            padding: 8px;
+            border-bottom: 1px solid grey;
+            font: 1em sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Servicios</li>
+                    <li>Opciones</li>
+                    <li>Planes</li>
+                    <li>Contacto</li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <section>Esto seria el contenido principal</section>
+        </main>
+    </div>
+</body>
+
+</html>

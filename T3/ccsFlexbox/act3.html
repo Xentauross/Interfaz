@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        main {
+            display: flex;
+            height: 80vh;
+            gap: 2px;
+        }
+
+        aside,
+        section {
+            padding: 12px 24px;
+        }
+
+        aside {
+            background-color: rgb(138, 199, 255);
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+
+        section {
+            background-color: rgb(207, 255, 207);
+            flex-grow: 4;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <aside>Contenido lateral</aside>
+        <section>Esto seria el contenido principal</section>
+    </main>
+</body>
+
+</html>

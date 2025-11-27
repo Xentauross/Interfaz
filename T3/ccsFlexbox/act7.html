@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        main {
+            display: flex;
+            flex-wrap: nowrap;
+            height: 400px;
+        }
+
+        section {
+            border: 1px solid lightgray;
+            padding: 24px;
+
+        }
+
+        .izq {
+            background-color: #0e7c74;
+            flex: 1;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .der-up,
+        .der-down {
+            flex: 1;
+            padding: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="izq">Columna izquierda</section>
+        <div>
+            <section class="der-up">Derecha parte alta</section>
+            <section class="der-down">Derecha parte baja</section>
+        </div>
+
+    </main>
+</body>
+
+</html>
