@@ -11,6 +11,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            min-height: 100vh;
         }
 
         header {
@@ -44,6 +45,11 @@
             margin: 10px;
         }
 
+        main {
+            background-color: #f7f6f6;
+            flex-grow: 1;
+        }
+
         input[type="button"] {
             background-color: rgb(5, 143, 189);
             border-radius: 10px;
@@ -57,45 +63,32 @@
         .UltimosArticulos {
             margin: 20px;
             padding: 24px;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .articulos {
             display: flex;
-            flex-flow: column wrap;
-            height: 270px;
+            flex-flow: row wrap;
+            height: auto;
             gap: 20px;
             margin-top: 10px;
             align-content: flex-start;
+            width: 100%;
         }
 
         article {
             border: 1px solid lightgray;
             padding: 24px;
-            margin: 10px;
+            margin: 0 10px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-        }
-
-        #art1 {
-            order: 1;
-        }
-
-        #art2 {
-            order: 3;
-        }
-
-        #art3 {
-            order: 2;
-        }
-
-        #art4 {
-            order: 4;
-        }
-
-        #art5 {
-            order: 5;
             flex-grow: 1;
+            width: auto;
+            flex: 1 0 calc(33.333% - 20px);
         }
+
+
 
         #footer {
             display: flex;
@@ -103,12 +96,12 @@
             background-color: #3b4463;
             color: white;
             padding: 20px;
-            margin-top: 20px;
+            margin-top: auto;
         }
 
         #sobreNosotros p {
-            display: block;
-            width: 20px;
+            width: auto;
+            max-width: 300px;
         }
 
 
