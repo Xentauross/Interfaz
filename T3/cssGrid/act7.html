@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            border: 1px solid lightgray;
+            background-color: #3b4463;
+            box-sizing: content-box;
+        }
+
+        #menu {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            justify-self: center;
+            gap: 15px;
+            align-items: center;
+        }
+
+        #logueo {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            gap: 10px;
+            padding-right: 10px;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        img {
+            height: 64px;
+            width: 64px;
+            padding-left: 10px;
+            margin: 10px;
+        }
+
+        input[type="button"] {
+            background-color: rgb(5, 143, 189);
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            border: 1px solid rgba(211, 211, 211, 0.418);
+            height: 40px;
+            width: 80px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <header id="header">
+        <img src="https://avatars.githubusercontent.com/u/184088785?v=4&size=64" alt="">
+        <nav id="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Articulos</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <div id="logueo">
+            <input type="button" name="Entrar" id="login" value="Entrar">
+            <input type="button" name="Registro" id="resgitro" value="Registro">
+        </div>
+    </header>
+
+</body>
+
+</html>

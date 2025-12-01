@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2</title>
+
+    <style>
+        * {
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-areas: "sidebar content";
+
+            grid-template-columns: 1fr 3fr;
+            min-height: 40vh;
+        }
+
+        main {
+            grid-area: content;
+            background-color: #929292;
+            padding: 20px;
+        }
+
+        nav {
+            grid-area: sidebar;
+            background-color: #e0e0e0;
+            padding: 20px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            border-bottom: 1px solid black;
+        }
+
+        a {
+            display: block;
+            padding: 15px 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Acerca</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Conenido</p>
+    </main>
+</body>
+
+</html>
