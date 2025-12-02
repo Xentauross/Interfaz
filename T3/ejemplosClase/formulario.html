@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form action="/action_page.php">
+        <h1>Reserva de plaza Polideportivo Miguelito</h1>
+        <fieldset>
+            <legend>Datos del participante</legend>
+            <label for="nomApe">Nombre y apellido</label>
+            <input type="text" id="nomApe" name="nomApe">
+            <p>¿Eres miembro del club?</p>
+            <input type="radio" id="tr1" name="participante" value="miembro">Miembro
+            <input type="radio" id="tr2" name="participante" value="noMiembro">No-miembro<br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de la reserva</legend>
+            <label for="deporte">Deporte</label>
+            <select id="deporte" name="deporte">
+                <option value="futbol">Fútbol</option>
+                <option value="baloncesto">Baloncesto</option>
+                <option value="tenis">Tenis</option>
+                <option value="padel">Pádel</option>
+            </select><br>
+            <p>Seleccionar fecha y hora de la reserva:</p>
+            <input type="date" id="fecha" name="fecha">
+            <input type="time" id="hora" name="hora"><br><br>
+            <input type="checkbox" id="check" name="aceptar" value="aceptar">Acepto las normas del club
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>

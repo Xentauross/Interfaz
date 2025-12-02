@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Prueba DAW2 - HTML&CSS</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Cursos</a></li>
+            <li><a href="#">Contatos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Cursos diaponibles</h3>
+                <article>
+                </article>
+                <article></article>
+                <article></article>
+        </section>
+        <section>
+            <h2>Precios y disponibilidad</h2>
+            <table>
+                <colgroup>
+                    <col>
+                    </col>
+                    <col class="primero">
+                    </col>
+                    <col class="segundo">
+                    </col>
+                    <col class="tercero">
+                    </col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Tramo horario</th>
+                        <th>Curso</th>
+                        <th>Nivel</th>
+                        <th>Horas</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Mañana</td>
+                        <td>HTML & CSS</td>
+                        <td>Básico</td>
+                        <td>40</td>
+                        <td>Abierto</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Medio</td>
+                        <td>60</td>
+                        <td>Cerrado</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Total</td>
+                        <td>100</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section>
+            <h2>Formulario de inscripción</h2>
+            <fieldset>
+                <input type="text" id="nomApe" name="nomApe" placeholder="Nombre y apellidos"><br>
+                <input type="text" id="email" name="email" placeholder="Email"><br>
+                <input type="email" id="email" name="email"><br>
+                <input type="date" id="fecha" name="fecha"><br>
+                <select type="select" id="curso" name="curso">
+                    <option value="htmlcss">Online</option>
+                    <option value="js">Precensial</option>
+                </select><br>
+                <input type="checkbox" id="check" name="aceptar" value="aceptar">Acepto terminos<br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"
+                    placeholder="Comentarios"></textarea><br>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </section>
+    </main>
+    <aside>
+        <p>Informacion acdiconal</p>
+    </aside>
+    <footer>
+        <p>2025 Vicente Peinado</p>
+    </footer>
+</body>
+
+</html>

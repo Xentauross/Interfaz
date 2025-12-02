@@ -1,0 +1,71 @@
+* {
+    font-family: "Story Script", sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header header header"
+        "nav main aside"
+        "footer footer footer";
+
+    grid-template-columns: 200px, 1fr, 200px;
+    gap: 10px;
+}
+
+header {
+    grid-area: header;
+    background-color: #a5edf7;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #80dacf;
+    padding: 10px;
+}
+
+main {
+    grid-area: main;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #e9abfc;
+    color: white;
+    padding: 10px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #a5edf7;
+    text-align: center;
+    padding: 10px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li {
+
+    list-style-type: none;
+    background-color: #f5d082;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
