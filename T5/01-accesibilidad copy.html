@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -322,7 +322,7 @@
 
         <div class="grid-menu">
             <div class="carta-item">
-                <img src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?w=400" alt="Pasta Carbonara">
+                <img src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?w=400">
                 <div class="info">
                     <div class="nombre">Pasta Carbonara</div>
                     <div class="precio">€14.50</div>
@@ -331,7 +331,7 @@
             </div>
 
             <div class="carta-item">
-                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Pizza Margherita">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400">
                 <div class="info">
                     <div class="nombre">Pizza Margherita</div>
                     <div class="precio">€12.00</div>
@@ -340,7 +340,7 @@
             </div>
 
             <div class="carta-item">
-                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400" alt="Tiramisú">
+                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400" alt="foto">
                 <div class="info">
                     <div class="nombre">Tiramisú</div>
                     <div class="precio">€7.00</div>
@@ -349,7 +349,7 @@
             </div>
 
             <div class="carta-item">
-                <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=400" alt="Risotto ai Funghi">
+                <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=400">
                 <div class="info">
                     <div class="nombre">Risotto ai Funghi</div>
                     <div class="precio">€16.00</div>
@@ -358,7 +358,7 @@
             </div>
 
             <div class="carta-item">
-                <img src="https://images.unsplash.com/photo-1595295333158-4742f28fbd85?w=400" alt="Lasagna della Casa">
+                <img src="https://images.unsplash.com/photo-1595295333158-4742f28fbd85?w=400">
                 <div class="info">
                     <div class="nombre">Lasagna della Casa</div>
                     <div class="precio">€15.50</div>
@@ -367,7 +367,7 @@
             </div>
 
             <div class="carta-item">
-                <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb44?w=400" alt="Bruschetta Mista">
+                <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb44?w=400">
                 <div class="info">
                     <div class="nombre">Bruschetta Mista</div>
                     <div class="precio">€8.00</div>
@@ -395,13 +395,11 @@
         <h5>Galería</h5>
         <div class="galeria">
             <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=300"
-                onclick="window.open(this.src)" alt="Salon">
+                onclick="window.open(this.src)">
             <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=300"
-                onclick="window.open(this.src)" alt="Salon Actos">
-            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=300" onclick="window.open(this.src)"
-                alt="Salon Comedor">
-            <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb51f3a?w=300" onclick="window.open(this.src)"
-                alt="Terraza">
+                onclick="window.open(this.src)">
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=300" onclick="window.open(this.src)">
+            <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb51f3a?w=300" onclick="window.open(this.src)">
         </div>
     </div>
 
@@ -462,14 +460,13 @@
         <h5>Reservar Mesa</h5>
 
         <form class="formulario">
-            <label for="nomApe">Nombre y apellido</label>
-            <input type="text" id="nomApe" placeholder="Nombre completo" class="requerido">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Correo electrónico" class="requerido">
-            <label for="telefono">Telefono</label>
-            <input type="text" id="telefono" placeholder="Teléfono">
-            <label for="comensales">Num. Comensales</label>
-            <select id="comensales" class="requerido">
+            <input type="text" placeholder="Nombre completo" class="requerido">
+
+            <input type="text" placeholder="Correo electrónico" class="requerido">
+
+            <input type="text" placeholder="Teléfono">
+
+            <select class="requerido">
                 <option value="">Número de comensales</option>
                 <option value="1">1 persona</option>
                 <option value="2">2 personas</option>
@@ -478,20 +475,17 @@
                 <option value="5">5+ personas</option>
             </select>
 
-            <label for="fecha">Fecha</label>
-            <input type="date" id="fecha" class="requerido">
-            <label for="comentario">Comentarios</label>
-            <textarea id="comentario" rows="3" placeholder="Comentarios o alergias alimentarias"></textarea>
+            <input type="date" class="requerido">
+
+            <textarea rows="3" placeholder="Comentarios o alergias alimentarias"></textarea>
 
             <div style="margin-bottom: 15px;">
                 <div style="margin-bottom: 5px; font-size: 12px;">Escribe el código de seguridad:</div>
                 <div class="captcha-img">X7k2mP</div>
-                <label for="verificacion">Introduce el CAPTCHA</label>
-                <input type="text" id="verificacion" placeholder="Código CAPTCHA" style="margin-top: 8px;">
+                <input type="text" placeholder="Código CAPTCHA" style="margin-top: 8px;">
             </div>
 
             <div style="margin-bottom: 15px;">
-                <label for="terminos">Acepta los terminos</label>
                 <input type="checkbox" id="terminos">
                 <span style="font-size: 11px;">
                     Acepto los
@@ -570,8 +564,7 @@
             <a href="https://facebook.com" target="_blank">Facebook</a>
         </div>
         <div style="margin-top: 15px;">
-            <label for="registro">Registrate</label>
-            <input type="email" id="registro" placeholder="Suscríbete al newsletter" tabindex="999"
+            <input type="email" placeholder="Suscríbete al newsletter" tabindex="999"
                 style="padding: 8px; font-size: 11px; border: 1px solid #555; background: #222; color: #444;">
             <div onclick="alert('Suscrito!')" tabindex="1000"
                 style="display:inline-block; background:#cc0000; color:#fff; padding:8px 15px; cursor:pointer; font-size: 11px;">
