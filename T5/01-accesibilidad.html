@@ -290,281 +290,285 @@
 
 <body>
 
-    <div class="header">
+    <header class="header">
         <div class="logo">🍽️ La Bella Tavola</div>
-        <div class="nav-links">
+        <nav class="nav-links">
             <div onclick="location.href='#menu'">MENÚ</div>
             <div onclick="location.href='#horarios'">HORARIOS</div>
             <div onclick="location.href='#reservas'">RESERVAS</div>
             <div onclick="location.href='#contacto'">CONTACTO</div>
+        </nav>
+    </header>
+    <main>
+        <div class="marquee">
+            🔥 ¡OFERTA ESPECIAL! 2x1 en pastas todos los martes. ¡No te lo pierdas! 🔥
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            🔥 ¡OFERTA ESPECIAL! 2x1 en pastas todos los martes. ¡No te lo pierdas! 🔥
         </div>
-    </div>
 
-    <div class="marquee">
-        🔥 ¡OFERTA ESPECIAL! 2x1 en pastas todos los martes. ¡No te lo pierdas! 🔥
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        🔥 ¡OFERTA ESPECIAL! 2x1 en pastas todos los martes. ¡No te lo pierdas! 🔥
-    </div>
-
-    <div class="oferta-flash">
-        ⏰ ¡OFERTA FLASH! Reserva en los próximos 5 minutos y obtén 20% de descuento. Código: FLASH20
-    </div>
-
-    <div class="hero">
-        <div class="hero-text">
-            <h1 class="titulo">Auténtica Cocina Italiana</h1>
-            <i class="subtitulo">La mejor experiencia gastronómica desde 1985</i>
-            <br>
-            <div class="boton-reserva" onclick="alert('Reserva')">
-                RESERVAR MESA
-            </div>
+        <div class="oferta-flash">
+            ⏰ ¡OFERTA FLASH! Reserva en los próximos 5 minutos y obtén 20% de descuento. Código: FLASH20
         </div>
-    </div>
 
-    <div class="seccion" id="menu">
-        <h5>Nuestro Menú</h5>
-        <div>Descubre nuestros platos más populares</div>
-
-        <div class="grid-menu">
-            <div class="carta-item">
-                <img src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?w=400" alt="Pasta Carbonara">
-                <div class="info">
-                    <div class="nombre">Pasta Carbonara</div>
-                    <div class="precio">€14.50</div>
-                    <div class="disponible">●</div>
-                </div>
-            </div>
-
-            <div class="carta-item">
-                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Pizza Margherita">
-                <div class="info">
-                    <div class="nombre">Pizza Margherita</div>
-                    <div class="precio">€12.00</div>
-                    <div class="disponible">●</div>
-                </div>
-            </div>
-
-            <div class="carta-item">
-                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400" alt="Tiramisú">
-                <div class="info">
-                    <div class="nombre">Tiramisú</div>
-                    <div class="precio">€7.00</div>
-                    <div class="agotado">●</div>
-                </div>
-            </div>
-
-            <div class="carta-item">
-                <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=400" alt="Risotto ai Funghi">
-                <div class="info">
-                    <div class="nombre">Risotto ai Funghi</div>
-                    <div class="precio">€16.00</div>
-                    <div class="disponible">●</div>
-                </div>
-            </div>
-
-            <div class="carta-item">
-                <img src="https://images.unsplash.com/photo-1595295333158-4742f28fbd85?w=400" alt="Lasagna della Casa">
-                <div class="info">
-                    <div class="nombre">Lasagna della Casa</div>
-                    <div class="precio">€15.50</div>
-                    <div class="agotado">●</div>
-                </div>
-            </div>
-
-            <div class="carta-item">
-                <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb44?w=400" alt="Bruschetta Mista">
-                <div class="info">
-                    <div class="nombre">Bruschetta Mista</div>
-                    <div class="precio">€8.00</div>
-                    <div class="disponible">●</div>
+        <div class="hero">
+            <div class="hero-text">
+                <h1 class="titulo">Auténtica Cocina Italiana</h1>
+                <i class="subtitulo">La mejor experiencia gastronómica desde 1985</i>
+                <br>
+                <div class="boton-reserva" onclick="alert('Reserva')">
+                    RESERVAR MESA
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="seccion seccion-oscura" id="sobre">
-        <h6>Sobre Nosotros</h6>
-        <p class="texto-justificado">
-            La Bella Tavola nació en 1985 de la mano del chef Giovanni Rossi, quien trajo
-            los sabores auténticos de la Toscana a nuestra ciudad. Durante más de 35 años,
-            hemos mantenido la tradición de preparar cada plato con ingredientes frescos
-            importados directamente de Italia. Nuestra pasta se elabora artesanalmente
-            cada mañana y nuestras salsas siguen las recetas originales de la familia Rossi.
-            Te invitamos a vivir una experiencia gastronómica única en un ambiente acogedor
-            y elegante que te transportará directamente al corazón de Italia.
-            Para más información <a href="#" style="color: #ffffff">haz click aquí</a>.
-        </p>
-    </div>
+        <div class="seccion" id="menu">
+            <h5>Nuestro Menú</h5>
+            <div>Descubre nuestros platos más populares</div>
 
-    <div class="seccion">
-        <h5>Galería</h5>
-        <div class="galeria">
-            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=300"
-                onclick="window.open(this.src)" alt="Salon">
-            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=300"
-                onclick="window.open(this.src)" alt="Salon Actos">
-            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=300" onclick="window.open(this.src)"
-                alt="Salon Comedor">
-            <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb51f3a?w=300" onclick="window.open(this.src)"
-                alt="Terraza">
+            <div class="grid-menu">
+                <div class="carta-item">
+                    <img src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?w=400" alt="Pasta Carbonara">
+                    <div class="info">
+                        <div class="nombre">Pasta Carbonara</div>
+                        <div class="precio">€14.50</div>
+                        <div class="disponible">●</div>
+                    </div>
+                </div>
+
+                <div class="carta-item">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400"
+                        alt="Pizza Margherita">
+                    <div class="info">
+                        <div class="nombre">Pizza Margherita</div>
+                        <div class="precio">€12.00</div>
+                        <div class="disponible">●</div>
+                    </div>
+                </div>
+
+                <div class="carta-item">
+                    <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400" alt="Tiramisú">
+                    <div class="info">
+                        <div class="nombre">Tiramisú</div>
+                        <div class="precio">€7.00</div>
+                        <div class="agotado">●</div>
+                    </div>
+                </div>
+
+                <div class="carta-item">
+                    <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=400"
+                        alt="Risotto ai Funghi">
+                    <div class="info">
+                        <div class="nombre">Risotto ai Funghi</div>
+                        <div class="precio">€16.00</div>
+                        <div class="disponible">●</div>
+                    </div>
+                </div>
+
+                <div class="carta-item">
+                    <img src="https://images.unsplash.com/photo-1595295333158-4742f28fbd85?w=400"
+                        alt="Lasagna della Casa">
+                    <div class="info">
+                        <div class="nombre">Lasagna della Casa</div>
+                        <div class="precio">€15.50</div>
+                        <div class="agotado">●</div>
+                    </div>
+                </div>
+
+                <div class="carta-item">
+                    <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb44?w=400" alt="Bruschetta Mista">
+                    <div class="info">
+                        <div class="nombre">Bruschetta Mista</div>
+                        <div class="precio">€8.00</div>
+                        <div class="disponible">●</div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="seccion" id="horarios">
-        <h5>Horarios</h5>
-        <table class="tabla-horarios">
-            <tr>
-                <td><b>Día</b></td>
-                <td><b>Almuerzo</b></td>
-                <td><b>Cena</b></td>
-                <td><b>Estado</b></td>
-            </tr>
-            <tr>
-                <td>Lunes</td>
-                <td>12:00 - 16:00</td>
-                <td>19:00 - 23:00</td>
-                <td style="color: green; font-size: 20px;">●</td>
-            </tr>
-            <tr>
-                <td>Martes</td>
-                <td>12:00 - 16:00</td>
-                <td>19:00 - 23:00</td>
-                <td style="color: green; font-size: 20px;">●</td>
-            </tr>
-            <tr>
-                <td>Miércoles</td>
-                <td>12:00 - 16:00</td>
-                <td>19:00 - 23:00</td>
-                <td style="color: green; font-size: 20px;">●</td>
-            </tr>
-            <tr>
-                <td>Jueves</td>
-                <td>12:00 - 16:00</td>
-                <td>19:00 - 23:00</td>
-                <td style="color: green; font-size: 20px;">●</td>
-            </tr>
-            <tr>
-                <td>Viernes</td>
-                <td>12:00 - 16:00</td>
-                <td>19:00 - 00:00</td>
-                <td style="color: green; font-size: 20px;">●</td>
-            </tr>
-            <tr>
-                <td>Sábado</td>
-                <td>13:00 - 16:00</td>
-                <td>19:00 - 00:00</td>
-                <td style="color: green; font-size: 20px;">●</td>
-            </tr>
-            <tr>
-                <td>Domingo</td>
-                <td colspan="2">CERRADO</td>
-                <td style="color: rgb(0, 0, 0); font-size: 20px;">●</td>
-            </tr>
-        </table>
-    </div>
+        <div class="seccion seccion-oscura" id="sobre">
+            <h6>Sobre Nosotros</h6>
+            <p class="texto-justificado">
+                La Bella Tavola nació en 1985 de la mano del chef Giovanni Rossi, quien trajo
+                los sabores auténticos de la Toscana a nuestra ciudad. Durante más de 35 años,
+                hemos mantenido la tradición de preparar cada plato con ingredientes frescos
+                importados directamente de Italia. Nuestra pasta se elabora artesanalmente
+                cada mañana y nuestras salsas siguen las recetas originales de la familia Rossi.
+                Te invitamos a vivir una experiencia gastronómica única en un ambiente acogedor
+                y elegante que te transportará directamente al corazón de Italia.
+                Para más información <a href="#" style="color: #ffffff">haz click aquí</a>.
+            </p>
+        </div>
 
-    <div class="seccion" id="reservas">
-        <h5>Reservar Mesa</h5>
+        <div class="seccion">
+            <h5>Galería</h5>
+            <div class="galeria">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=300"
+                    onclick="window.open(this.src)" alt="Salon">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=300"
+                    onclick="window.open(this.src)" alt="Salon Actos">
+                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=300"
+                    onclick="window.open(this.src)" alt="Salon Comedor">
+                <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb51f3a?w=300"
+                    onclick="window.open(this.src)" alt="Terraza">
+            </div>
+        </div>
 
-        <form class="formulario">
-            <label for="nomApe">Nombre y apellido</label>
-            <input type="text" id="nomApe" placeholder="Nombre completo" class="requerido">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Correo electrónico" class="requerido">
-            <label for="telefono">Telefono</label>
-            <input type="text" id="telefono" placeholder="Teléfono">
-            <label for="comensales">Num. Comensales</label>
-            <select id="comensales" class="requerido">
-                <option value="">Número de comensales</option>
-                <option value="1">1 persona</option>
-                <option value="2">2 personas</option>
-                <option value="3">3 personas</option>
-                <option value="4">4 personas</option>
-                <option value="5">5+ personas</option>
-            </select>
+        <div class="seccion" id="horarios">
+            <h5>Horarios</h5>
+            <table class="tabla-horarios">
+                <tr>
+                    <td><b>Día</b></td>
+                    <td><b>Almuerzo</b></td>
+                    <td><b>Cena</b></td>
+                    <td><b>Estado</b></td>
+                </tr>
+                <tr>
+                    <td>Lunes</td>
+                    <td>12:00 - 16:00</td>
+                    <td>19:00 - 23:00</td>
+                    <td style="color: green; font-size: 20px;">●</td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <td>12:00 - 16:00</td>
+                    <td>19:00 - 23:00</td>
+                    <td style="color: green; font-size: 20px;">●</td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <td>12:00 - 16:00</td>
+                    <td>19:00 - 23:00</td>
+                    <td style="color: green; font-size: 20px;">●</td>
+                </tr>
+                <tr>
+                    <td>Jueves</td>
+                    <td>12:00 - 16:00</td>
+                    <td>19:00 - 23:00</td>
+                    <td style="color: green; font-size: 20px;">●</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>12:00 - 16:00</td>
+                    <td>19:00 - 00:00</td>
+                    <td style="color: green; font-size: 20px;">●</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>13:00 - 16:00</td>
+                    <td>19:00 - 00:00</td>
+                    <td style="color: green; font-size: 20px;">●</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td colspan="2">CERRADO</td>
+                    <td style="color: rgb(0, 0, 0); font-size: 20px;">●</td>
+                </tr>
+            </table>
+        </div>
 
-            <label for="fecha">Fecha</label>
-            <input type="date" id="fecha" class="requerido">
-            <label for="comentario">Comentarios</label>
-            <textarea id="comentario" rows="3" placeholder="Comentarios o alergias alimentarias"></textarea>
+        <div class="seccion" id="reservas">
+            <h5>Reservar Mesa</h5>
 
-            <div style="margin-bottom: 15px;">
-                <div style="margin-bottom: 5px; font-size: 12px;">Escribe el código de seguridad:</div>
-                <div class="captcha-img">X7k2mP</div>
-                <label for="verificacion">Introduce el CAPTCHA</label>
-                <input type="text" id="verificacion" placeholder="Código CAPTCHA" style="margin-top: 8px;">
+            <form class="formulario">
+                <label for="nomApe">Nombre y apellido</label>
+                <input type="text" id="nomApe" placeholder="Nombre completo" class="requerido">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Correo electrónico" class="requerido">
+                <label for="telefono">Telefono</label>
+                <input type="text" id="telefono" placeholder="Teléfono">
+                <label for="comensales">Num. Comensales</label>
+                <select id="comensales" class="requerido">
+                    <option value="">Número de comensales</option>
+                    <option value="1">1 persona</option>
+                    <option value="2">2 personas</option>
+                    <option value="3">3 personas</option>
+                    <option value="4">4 personas</option>
+                    <option value="5">5+ personas</option>
+                </select>
+
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" class="requerido">
+                <label for="comentario">Comentarios</label>
+                <textarea id="comentario" rows="3" placeholder="Comentarios o alergias alimentarias"></textarea>
+
+                <div style="margin-bottom: 15px;">
+                    <div style="margin-bottom: 5px; font-size: 12px;">Escribe el código de seguridad:</div>
+                    <div class="captcha-img">X7k2mP</div>
+                    <label for="verificacion">Introduce el CAPTCHA</label>
+                    <input type="text" id="verificacion" placeholder="Código CAPTCHA" style="margin-top: 8px;">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="terminos">Acepta los terminos</label>
+                    <input type="checkbox" id="terminos">
+                    <span style="font-size: 11px;">
+                        Acepto los
+                        <a href="#" onclick="window.open('terminos.html')" style="color: blue;">términos y
+                            condiciones</a>
+                    </span>
+                </div>
+
+                <div class="enviar" onclick="alert('¡Formulario enviado!')"
+                    style="display:inline-block; cursor:pointer; background:#cc0000; color:white; padding:12px 30px; border-radius:4px;">
+                    ENVIAR RESERVA
+                </div>
+            </form>
+        </div>
+
+        <div class="seccion" id="contacto">
+            <h5>Contacto</h5>
+
+            <div style="margin-top: 10px;">
+                📍 Calle Falsa 123, Madrid, España<br>
+                📞 +34 912 345 678<br>
+                ✉️ info@labellatavola.com
             </div>
 
-            <div style="margin-bottom: 15px;">
-                <label for="terminos">Acepta los terminos</label>
-                <input type="checkbox" id="terminos">
-                <span style="font-size: 11px;">
-                    Acepto los
-                    <a href="#" onclick="window.open('terminos.html')" style="color: blue;">términos y condiciones</a>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.0!2d-3.7!3d40.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1"
+                width="100%" height="250" style="border:0; margin-top: 15px;" loading="lazy"></iframe>
+
+            <div style="margin-top: 20px;">
+                <h6>Síguenos</h6>
+                <a href="#" class="icon-link">📘</a>
+                <a href="#" class="icon-link">📸</a>
+                <a href="#" class="icon-link">🐦</a>
+                <a href="javascript:void(0)" class="icon-link" onclick="window.open('https://tiktok.com')">🎵</a>
+            </div>
+        </div>
+
+        <div class="seccion" style="background: #f5f5f5;">
+            <h5>Opiniones de Clientes</h5>
+
+            <div style="margin-top: 15px;">
+                <div style="font-size: 20px;">⭐⭐⭐⭐⭐</div>
+                <div style="font-style: italic; margin: 5px 0;">
+                    "La mejor pasta que he probado en mi vida. ¡Volveré seguro!"
+                </div>
+                <div style="font-size: 11px; color: #2e2e2e;">- María G.</div>
+            </div>
+
+            <div style="margin-top: 15px;">
+                <div style="font-size: 20px;">⭐⭐⭐⭐</div>
+                <div style="font-style: italic; margin: 5px 0;">
+                    "Ambiente increíble y servicio excelente. Solo le falta un poco más de variedad."
+                </div>
+                <div style="font-size: 11px; color: #2e2e2e;">- Carlos R.</div>
+            </div>
+
+            <div style="margin-top: 15px;">
+                <span class="tooltip-container">
+                    📊 Ver puntuación media
+                    <span class="tooltip-text">4.7 de 5 basado en 234 opiniones</span>
                 </span>
             </div>
-
-            <div class="enviar" onclick="alert('¡Formulario enviado!')"
-                style="display:inline-block; cursor:pointer; background:#cc0000; color:white; padding:12px 30px; border-radius:4px;">
-                ENVIAR RESERVA
-            </div>
-        </form>
-    </div>
-
-    <div class="seccion" id="contacto">
-        <h5>Contacto</h5>
-
-        <div style="margin-top: 10px;">
-            📍 Calle Falsa 123, Madrid, España<br>
-            📞 +34 912 345 678<br>
-            ✉️ info@labellatavola.com
         </div>
 
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.0!2d-3.7!3d40.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1"
-            width="100%" height="250" style="border:0; margin-top: 15px;" loading="lazy"></iframe>
-
-        <div style="margin-top: 20px;">
-            <h6>Síguenos</h6>
-            <a href="#" class="icon-link">📘</a>
-            <a href="#" class="icon-link">📸</a>
-            <a href="#" class="icon-link">🐦</a>
-            <a href="javascript:void(0)" class="icon-link" onclick="window.open('https://tiktok.com')">🎵</a>
-        </div>
-    </div>
-
-    <div class="seccion" style="background: #f5f5f5;">
-        <h5>Opiniones de Clientes</h5>
-
-        <div style="margin-top: 15px;">
-            <div style="font-size: 20px;">⭐⭐⭐⭐⭐</div>
-            <div style="font-style: italic; margin: 5px 0;">
-                "La mejor pasta que he probado en mi vida. ¡Volveré seguro!"
-            </div>
-            <div style="font-size: 11px; color: #2e2e2e;">- María G.</div>
-        </div>
-
-        <div style="margin-top: 15px;">
-            <div style="font-size: 20px;">⭐⭐⭐⭐</div>
-            <div style="font-style: italic; margin: 5px 0;">
-                "Ambiente increíble y servicio excelente. Solo le falta un poco más de variedad."
-            </div>
-            <div style="font-size: 11px; color: #2e2e2e;">- Carlos R.</div>
-        </div>
-
-        <div style="margin-top: 15px;">
-            <span class="tooltip-container">
-                📊 Ver puntuación media
-                <span class="tooltip-text">4.7 de 5 basado en 234 opiniones</span>
-            </span>
-        </div>
-    </div>
-
-    <audio autoplay loop>
-        <source src="musica-italiana.mp3" type="audio/mpeg">
-    </audio>
-
-    <div class="footer">
+        <audio autoplay loop>
+            <source src="musica-italiana.mp3" type="audio/mpeg">
+        </audio>
+    </main>
+    <footer class="footer">
         <div style="margin-bottom: 10px;">
             © 2024 La Bella Tavola - Todos los derechos reservados
         </div>
@@ -577,13 +581,13 @@
         <div style="margin-top: 15px;">
             <label for="registro">Registrate</label>
             <input type="email" id="registro" placeholder="Suscríbete al newsletter" tabindex="999"
-                style="padding: 8px; font-size: 11px; border: 1px solid #555; background: #222; color: #444;">
+                style="padding: 8px; font-size: 11px; border: 1px solid #555; background: #222; color: #cac9c9;">
             <div onclick="alert('Suscrito!')" tabindex="1000"
                 style="display:inline-block; background:#cc0000; color:#fff; padding:8px 15px; cursor:pointer; font-size: 11px;">
                 OK
             </div>
         </div>
-    </div>
+    </footer>
 
     <script>
         document.addEventListener('contextmenu', function (e) {
